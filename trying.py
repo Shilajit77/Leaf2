@@ -56,7 +56,7 @@ for name, child in tmodel.named_children():
 
 tmodel.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 #--------------------model2------------------------------#
-model2_path = 'models/rnet.pth'
+'''model2_path = 'models/rnet.pth'
 tmodel2 = models.resnet101()
 tmodel2.fc = nn.Linear(in_features=2048, out_features=22, bias=True)
 for name, child in tmodel2.named_children():
@@ -73,9 +73,14 @@ tmodel2.load_state_dict(torch.load(model2_path, map_location=torch.device('cpu')
 model3_path = 'models/vgg16.pth'
 tmodel3 = models.vgg16(pretrained=True)
 tmodel3.classifier[6] = nn.Linear(in_features=4096, out_features=22, bias=True)
-tmodel3.load_state_dict(torch.load(model3_path, map_location=torch.device('cpu')))
+tmodel3.load_state_dict(torch.load(model3_path, map_location=torch.device('cpu')))'''
+tmodel2 = models.densenet121()
+tmodel2.classifier = nn.Linear(in_features=1024, out_features=22, bias=True)
+tmodel2.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 
-
+tmodel3 = models.densenet121()
+tmodel3.classifier = nn.Linear(in_features=1024, out_features=22, bias=True)
+tmodel3.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 
 
 
