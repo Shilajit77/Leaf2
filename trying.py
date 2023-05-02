@@ -2,7 +2,6 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import pickle
-!pip install torch
 import torch
 from torchvision import models
 import torch.nn as nn
