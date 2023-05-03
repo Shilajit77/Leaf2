@@ -81,3 +81,4 @@ Performance metrics of the used models:
 
 
 ## Conclusion
+we have proposed a system for detecting leaf diseases using deep learning models and have shown that our approach of utilizing knowledge distillation and ensemble learning can significantly improve the accuracy, precision, and recall of the system. Our experiments demonstrate that the ensembled model achieves comparable performance to the larger teacher model. Our system provides an efficient and reliable way to detect leaf diseases in plants, which can potentially lead to significant benefits for agriculture and food security.
