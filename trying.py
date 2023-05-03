@@ -122,7 +122,7 @@ def load_model(model_name):
     elif model_name == 'Model 3 (VGG16)':
         model = model2
     elif model_name == 'Ensemble (Best One)':
-        model = ensemble(er,tmodel,tmodel2,tmodel3)
+        model = ensemble(er,tmodel,tmodel2,model2)
     return model
 
 def ensemble(er,model1,model2,model3):
