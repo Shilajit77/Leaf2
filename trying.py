@@ -61,7 +61,7 @@ tmodel2.classifier = nn.Linear(in_features=1024, out_features=22, bias=True)
 tmodel2.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 
 model_path = "models/mnet.pth"
-model2 = torchvision.models.mobilenet_v2(pretrained=False)
+model2 = models.mobilenet_v2(pretrained=False)
 model2.classifier = nn.Linear(in_features=1280, out_features=22, bias=True)
 model2.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 
