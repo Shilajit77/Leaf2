@@ -1,6 +1,8 @@
 # Leaf2
 # Developing a system for Leaf Disease Detection<br>
 
+Link for Demonstration: https://shilajit77-leaf2-trying-cy1r0u.streamlit.app/
+
 Name of Students:
 1. Shilajit Banerjee(M22CS062)
 2. Dattatreyo Roy(M22CS060)
