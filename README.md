@@ -26,13 +26,6 @@ Your system includes an interface that allows users to select different models t
 
 3. Comparing the performance of the ensembled model to the teacher model and the models obtained by knowledge distillation where we aim to compare the performance of the ensembled model to determine whether the ensemble approach is more effective in improving the performance of the detection system.
 
-<p align="center">
-  <img src="Images/ensem.jpg" alt="Ensemble model" width="500"/><br>
- </p>
-
-
- 
- 
 4. The project aims to develop a user-friendly interface that allows users to choose different models for detecting diseases, providing flexibility and ease of use. This would involve designing and implementing an interface that is intuitive and easy to navigate.
 
 
@@ -45,7 +38,7 @@ Follow this link to get an overview of the dataset:
 
 ## Approach to the problem:
 
-In this project, we have developed the leaf disease detection system using three well-known deep learning models such as DenseNet121, ResNet101, and VGG16, to classify images of leaves into healthy or diseased categories and identify the specific disease. Having experimented with the individual models, we have found out the results. Now, to improving the accuracy, precision, and recall of the detection system, we have tried to use the Ensemble learning which can help improve the overall performance of the system by combining the predictions of multiple models.
+In this project, we have developed the leaf disease detection system using the well-known deep learning model such as DenseNet121 (which is the teacher model here), the shuffleNet and mobileNet model made through knowledge distillation with the teacher model and the ensembled model to classify images of leaves into healthy or diseased categories and identify the specific disease. Having experimented with the individual models, we have found out the results. Now, to improving the accuracy, precision, and recall of the detection system, we have tried to use the Ensemble learning which can help improve the overall performance of the system by combining the predictions of multiple models.
 
 <p align="center">
   <img src="Images/ensem.jpg" alt="Ensemble model" width="500"/><br>
