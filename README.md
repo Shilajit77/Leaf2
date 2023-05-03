@@ -1,4 +1,5 @@
-# Leaf2
+# DL-OPS Project
+
 # Developing a system for Leaf Disease Detection<br>
 
 Link for Demonstration: https://shilajit77-leaf2-trying-cy1r0u.streamlit.app/
