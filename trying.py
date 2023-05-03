@@ -55,6 +55,7 @@ for name, child in tmodel.named_children():
            param.requires_grad = False
 
 tmodel.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
+
 model_path = "models/snet.pth"
 model3 = models.shufflenet_v2_x2_0(pretrained=False)
 model3.fc = nn.Linear(in_features=2048, out_features=22, bias=True)
@@ -117,9 +118,9 @@ def prediction(er,tmodel):
 def load_model(model_name):
     if model_name == 'Model 1 (DenseNet)':
         model = tmodel
-    elif model_name == 'Model 2 (Resnet)':
-        model = tmodel2
-    elif model_name == 'Model 3 (VGG16)':
+    elif model_name == 'Model 2 (ShuffleNet)':
+        model = model3
+    elif model_name == 'Model 3 (MobileNet)':
         model = model2
     elif model_name == 'Ensemble (Best One)':
         model = ensemble(er,tmodel,model3,model2)
@@ -241,7 +242,7 @@ uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png
 
 
 # Create a drop-down menu to select the model
-model_name = st.selectbox('Select a model', ['Model 1 (DenseNet)', 'Model 2 (Resnet)', 'Model 3 (VGG16)','Ensemble (Best One)'])
+model_name = st.selectbox('Select a model', ['Model 1 (DenseNet)', 'Model 2 (ShuffleNet)', 'Model 3 (MobileNet)','Ensemble (Best One)'])
 def open_html_file():
     file_path ='credit.html'
     os.system(f'start {file_path}') # Windows
