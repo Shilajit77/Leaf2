@@ -55,10 +55,10 @@ for name, child in tmodel.named_children():
            param.requires_grad = False
 
 tmodel.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
-
-tmodel2 = models.densenet121()
-tmodel2.classifier = nn.Linear(in_features=1024, out_features=22, bias=True)
-tmodel2.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
+model_path = "models/snet.pth"
+model3 = models.shufflenet_v2_x2_0(pretrained=False)
+model3.fc = nn.Linear(in_features=2048, out_features=22, bias=True)
+model3.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 
 model_path = "models/mnet.pth"
 model2 = models.mobilenet_v2(pretrained=False)
@@ -122,7 +122,7 @@ def load_model(model_name):
     elif model_name == 'Model 3 (VGG16)':
         model = model2
     elif model_name == 'Ensemble (Best One)':
-        model = ensemble(er,tmodel,tmodel2,model2)
+        model = ensemble(er,tmodel,model3,model2)
     return model
 
 def ensemble(er,model1,model2,model3):
