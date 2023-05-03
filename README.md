@@ -33,7 +33,7 @@ Your system includes an interface that allows users to select different models t
 
 We have taken the dayaset from Kaggle. The plant leaves dataset on Kaggle consists of 4,503 images of 12 plant species, namely Mango, Arjun, Alstonia Scholaris, Guava, Bael, Jamun, Jatropha, Pongamia Pinnata, Basil, Pomegranate, Lemon, and Chinar. The images have been labeled into two classes - healthy and diseased. The plants were named from P0 to P11 and the dataset was divided into 22 subject categories ranging from 0000 to 0022. The images labeled with categories 0000 to 0011 represent the healthy class, while those labeled with categories 0012 to 0022 represent the diseased class.
 The dataset contains 2,278 images of healthy leaves and 2,225 images of diseased leaves.<br>
-Follow this link to get an overview of the dataset:
+Follow this link to get an overview of the dataset: https://www.kaggle.com/datasets/csafrit2/plant-leaves-for-image-classification
 
 
 ## Approach to the problem:
