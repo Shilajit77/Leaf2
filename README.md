@@ -62,23 +62,17 @@ we have developed the user-friendly interface for this system which allows the u
 
 ## Results
 
-Without Smoting: 
-
-| Model         | Accuracy | Precision | Recall | F1 Score |
-| -------------| --------| --------- | ------ | -------- |
-| DenseNet 121  | 0.75    | 0.77      | 0.75   | 0.69     |
-| Resnet 101    | 0.77    | 0.81      | 0.77   | 0.77     |
-| VGG16         | 0.67    | 0.65      | 0.67   | 0.65     |
-
-
-With Smoting: 
+Performance metrics of the used models:
 
 
 | Model         | Accuracy | Precision | Recall | F1 Score |
 | -------------| --------| --------- | ------ | -------- |
-| DenseNet 121  | 0.77    | 0.79      | 0.77   | 0.78     |
-| Resnet 101    | 0.74    | 0.78      | 0.73   | 0.73     |
-| VGG16         | 0.69    | 0.64      | 0.69   | 0.70     |
+| DenseNet 121  | 0.88    | 0.91      | 0.88   | 0.88     |
+| MobileNet     | 0.79    | 0.80      | 0.80   | 0.80     |
+| ShuffleNet         | 0.78    | 0.81      | 0.79   | 0.79     |
+| Ensemble Model    | 0.90    | 0.91      | 0.90   | 0.90     |
+
+
 
 
 ## Conclusion
