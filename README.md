@@ -8,6 +8,7 @@ Name of Students:
 1. Shilajit Banerjee(M22CS062)
 2. Dattatreyo Roy(M22CS060)
 
+
 ## Overview
 
 The main objective of this project is proposing a system for detecting leaf diseases using different deep learning models. The system utilizes deep learning models to classify images of leaves into healthy or diseased categories and identify their diseases. To improve the accuracy, precision, and recall of the system, we have employed the concepts of knowledge distillation and ensemble learning. Knowledge distillation involves transferring the knowledge of a large, accurate model to a smaller model, allowing the smaller model to learn from the large model's predictions. This approach can improve the accuracy of the smaller model while reducing the computational resources required. Ensemble learning involves combining multiple models' predictions to obtain a more accurate prediction. This approach can improve the system's overall accuracy, precision, and recall by taking advantage of each model's strengths and weaknesses.
